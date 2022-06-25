@@ -1,9 +1,6 @@
-# My php-cs-fixer preferences
+<?php
 
-These are my personal preferences for php-cs-fixer, which are PSR12 with minor tweaks.
-
-```php
-[
+$rules = [
     '@PSR12' => true,
     'array_syntax' => ['syntax' => 'short'],
     'cast_spaces' => ['space' => 'single'],
@@ -13,5 +10,6 @@ These are my personal preferences for php-cs-fixer, which are PSR12 with minor t
         'imports_order' => ['class', 'function', 'const'],
         'sort_algorithm' => 'alpha'
     ],
-]
-```
+];
+
+return (new PhpCsFixer\Config())->setRules($rules);
