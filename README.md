@@ -13,5 +13,6 @@ These are my personal preferences for php-cs-fixer, which are PSR12 with minor t
         'imports_order' => ['class', 'function', 'const'],
         'sort_algorithm' => 'alpha'
     ],
+    'single_quote' => ['strings_containing_single_quote_chars' => true],
 ]
 ```
